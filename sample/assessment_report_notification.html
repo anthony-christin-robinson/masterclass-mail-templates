@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="" />
+  <style>
+    :root {
+      --fs-45: 45px;
+      --fs-16: 16px;
+      --fs-14: 14px;
+      --fs-24: 24px;
+      --lh-55: 55px;
+      --lh-24: 24px;
+      --fw-7: 700;
+      --fw-4: 400;
+    }
+
+    @import url("https://fonts.cdnfonts.com/css/nunito");
+    @import url('https://fonts.googleapis.com/css?family=Nunito');
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+    }
+
+    .bg-sction {
+      background-image: url("./images/bgpattern.svg");
+      width: 100%;
+      height: 120px;
+    }
+
+    .hello-name {
+      margin-top: 20px;
+    }
+
+    .content-ul {
+      list-style-type: disc;
+      margin: 0 0 0 65px;
+    }
+
+    .content-ul li {}
+
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      height: 120px;
+      z-index: 0;
+    }
+
+    .blue-text {
+      color: #74c3d4;
+      padding: 15px 40px 0 40px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .padding-top-reduced {
+      padding: 0px 40px 15px 40px;
+    }
+
+    .check-text {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #757575;
+    }
+
+    .bottom-para {
+      width: 400px;
+      height: auto;
+      margin: 0px auto 15px auto;
+      text-align: center;
+      color: #939393;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    p a span {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .text-block {
+      position: relative;
+    }
+
+    .text-block::before {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 2px;
+      background-color: #757575;
+      top: 53px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      /* margin: 10px 0; */
+      border-radius: 50%;
+    }
+
+    .icons-container {
+      padding: 10px 40px;
+      /* display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; */
+      width: 240px;
+      margin: 0 auto;
+    }
+
+    .icons-container .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* width: 20px;
+            height: 24px; */
+    }
+
+    .icons-container .icon1 {
+      /* background-color: #0077b5; */
+    }
+
+    .icons-container .icon2 {
+      /* background-color: #55acee; */
+      /* width: 45px;
+            height: 45px; */
+    }
+
+    .icons-container .icon2 a {
+      /* margin: 3px 0 0 0; */
+    }
+
+    .icons-container .icon3 a {
+      /* margin: 3px 0 0 0; */
+    }
+
+    .icons-container .icon3 {
+      /* background-color: #3b5998; */
+      /* width: 45px;
+            height: 45px; */
+    }
+
+    .line {
+      width: 90%;
+      height: 2px;
+      background-color: #dddddd;
+      margin: 40px auto 40px auto;
+    }
+
+    .oter-links {
+      color: #939393;
+    }
+
+    .oter-links a {
+      color: #939393;
+      text-decoration: none;
+    }
+
+    .underscore1 {
+      /* border-bottom: 1px dashed #000; */
+      /* width: 15px !important;
+            height: 20px; */
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: #000;
+    }
+
+    .underscore2 {
+      /* border-bottom: 1px dashed #000; */
+      /* width: 15px !important;
+            height: 20px; */
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: #000;
+    }
+
+    .linked-text {
+      /* border-bottom: 1px solid #254d8f; */
+      text-decoration: underline;
+      text-decoration-color: #254d8f;
+      color: #254d8f;
+      font-size: 16px;
+      line-height: 24px;
+      /* padding-bottom: 0px; */
+      font-weight: 400;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body style="background-color: #F3F2F0">
+  <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div style="height: 20px; background-color: #F3F2F0;"></div>
+  <div id="verify-template" style=" max-width: 600px;
+  height: auto;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;">
+    <div class="logo" style="text-align: center;
+    padding: 15px 0 0 0;
+    margin: 0px auto 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;">
+      <img id="logo" style=" text-align: center;
+      margin: 0 auto;
+      width: 102px;
+      height: 32px;
+      object-fit: cover;"
+        src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/Logo.png" alt="logo"
+        title="logo">
+    </div>
+    <div class="bg-section" style="background-color:#12284C;  height: 120px;
+    background-color: #12284c;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    position: relative;">
+      <h1 style="text-align: center;
+      font-family: 'Tahoma', sans-serif;
+      font-size: 25px;
+      line-height: 34px;
+      font-weight: 700;
+      color: #fff;
+      z-index: 1;
+      padding: 0px 0;
+      margin: auto;
+      vertical-align: middle;">Your <%=name_of_assessment%> assessment report </h1>
+    </div>
+    <img class="image-1"
+      src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/email-template-2.png"
+      alt="email_template" title="email_template" style="  width: 600px;
+    height: 392px; object-fit: cover" />
+    <h3 class="hello-name" style="text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #040404;
+    padding: 10px 40px;
+    text-align: left;">Hi <%=user_name%>,</h3>
+    <p class="para" style=" padding: 15px 40px;
+    color: #040404;
+    font-size: 16px;
+    line-height: 24px;">
+      Thank you for taking the <span style="font-weight: 700">
+        <%=name_of_assessment%>
+      </span> assessment on
+      <span style="font-weight: 700">
+        <%=date%>.
+      </span> Click the download button to access your report. 
+    </p>
+    <div class="button-container" style=" margin: 10px auto 10px auto;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+      justify-content: center;
+-webkit-box-align:center;
+-ms-flex-align:center;
+      align-items:center;">
+      <a href="<%=report_url%>" class="button" style="color: #fff !important; height: 25px;
+        width: 200px;
+        border-radius: 20px;
+            padding: 17px 40px 17px 40px;
+        background-color: #12284c;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 15px auto;
+        text-decoration: none;">Download Report</a>
+    </div>
+    <p class="blue-text" style=" padding: 15px 40px 0 40px;
+    color:#74c3d4;
+    font-size: 16px;
+    line-height: 24px;">Accessing your Report: </p>
+    <p class="para padding-top-reduced" style=" padding: 0px 40px 15px 40px;
+    color: #040404;
+    font-size: 16px;
+    line-height: 24px;">
+      Your report is password protected. The password will be the month and year of your birth in mmyyyy format. 
+
+    </p>
+    <p class="blue-text">About the Assessment:</p>
+    <p class="para padding-top-reduced" style=" padding: 0px 40px 15px 40px;
+    color: #040404;
+    font-size: 16px;
+    line-height: 24px;">
+      <span style="font-weight: 400">
+        <%=assessment_description%>
+      </span>  
+    </p>
+
+
+    <p class="blue-text"> Here’s what you can do next: </p>
+    <ul class="content-ul" style="list-style-type: disc;
+    margin: 0 0 0 65px;">
+      <li style=" font-size: 16px; line-height: 24px; color: #040404">Click <a href="<%=sub_domain_url%>"
+          class="linked-text" style="color: #254D8F; font-size: 16px; line-height: 24px">here</a> to go to the <span
+          style="font-weight: 700;">
+          <%=sub_domain_name%>
+        </span> page</li>
+      <li style=" font-size: 16px; line-height: 24px; color: #040404 ">Have questions? Click <a
+          href="mailto:<%=support_email%>?subject=<%=subject%>" class="linked-text" style="color: #254D8F">here</a> to
+        send us a mail.</li>
+    </ul>
+    <p class="para" style=" padding: 15px 40px;
+    color: #040404;
+    font-size: 16px;
+    line-height: 24px;">
+      Here’s to realising your fullest potential. We are with you every step of the way.
+    </p>
+    <p class="para" style="padding: 15px 40px 0px 40px; color: #040404; font-size: 16px;
+    line-height: 24px;">
+      To the power of n,
+    </p>
+    <p class="para padding-top-reduced">Team <span style="font-weight: 700; color: #040404; font-size: 16px;
+      line-height: 24px;">mind-n,</span></p>
+    <div style="width: 96%; margin: 0 auto; height: 2px; background-color: #939393; opacity: 0.5"></div>
+    <div class="icons-container" style="margin: 30px auto 15px auto; background-color: transparent;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: transparent;"
+        bgcolor="transparent">
+        <tr>
+          <td bgcolor="transparent">
+            <div class="icon icon1">
+              <a>
+                <img
+                  src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/LinkedIN-2.png"
+                  alt="LinkedIn" title="LinkedIn" style="width: 45px; height:45px; object-fit: cover" />
+                <!-- <div id="linkedin"></div> -->
+              </a>
+            </div>
+          </td>
+          <td bgcolor="transparent">
+            <div class="icon icon2">
+              <a>
+                <img src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/twitter-2.png
+                " alt="Twitter" title="Twitter" style="width: 45px; height:45px; object-fit: cover">
+                <!-- <div id="twitter"></div> -->
+              </a>
+            </div>
+          </td>
+          <td bgcolor="transparent">
+            <div class="icon icon3">
+              <a>
+                <img
+                  src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/Youtube-2.png"
+                  alt="Youtube" title="Youtube" style="width: 45px; height:45px; object-fit: cover">
+                <!-- <div id="youtube"></div> -->
+              </a>
+            </div>
+          </td>
+          <td bgcolor="transparent">
+            <div class="icon icon4">
+              <a>
+                <img
+                  src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/Instagram-2.png"
+                  alt="Instagram" title="Instagram" style="width: 45px; height:45px; object-fit: cover">
+                <!-- <div id="instagram"></div> -->
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="transparent">
+      <tr>
+        <td align="center" style="color: #939393; font-size: 16px;  padding: 0px 40px;
+        font-size: 16px;
+        line-height: 24px;" bgcolor="transparent">
+          This email is sent to you by mind-n 
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <span style="color: #000; font-weight: 500; font-size: 16px; line-height: 24px;  padding: 0px 40px;
+          font-size: 16px;
+          line-height: 24px;">Witmer Health Technologies</span>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="color: #939393; font-size: 16px;  padding: 0px 40px;
+        font-size: 16px;
+        line-height: 24px;">
+          B-4, Green Court,
+          Vidyaranyapura, Bangalore 560 097
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="color: #939393; font-size: 16px;  padding: 0px 40px;
+        font-size: 16px;
+        line-height: 24px;">
+          Visit: <a href="https://witmer.ai">Witmer.ai</a>
+
+
+        </td>
+      </tr>
+    </table>
+    <p class="oter-links" style="text-align: center;  padding: 15px 40px 15px 40px;
+      color: #939393;
+      font-size: 16px;
+      line-height: 24px;">
+      <a href="<%=manage_email_preferences%>">Manage Email Preferences</a> |
+      <a href="<%=privacy_policy_url%>">Privacy Policy</a> |
+      <a href="<%=unsubscribe_url%>">Unsubscribe </a>|
+      <a href="<%=faq_url%>">FAQs</a>
+    </p>
+    <p class="para" style="text-align: center; padding-bottom: 40px; color: #939393;  padding: 15px 40px;
+    font-size: 16px;
+    line-height: 24px;">
+      mind-n is a registered trademark of Witmer Health Technologies Copyright
+      © 2023 Witmer Health Technologies. All rights reserved
+    </p>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>

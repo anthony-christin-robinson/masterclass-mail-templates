@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= subject %></title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <div class="layout">
+            <header>
+                <div class="logo | text-center">
+                    <img src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/Logo.png" alt="logo" />
+                </div>
+                
+                <div class="notification-title">
+                    <h2 class="subject | text-center"><%=subject%></h2>
+                </div>
+            </header>
+            
+            <main>
+                <div class="banner">
+                    <img src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/email-template-2.png" alt="banner" />
+                </div>
+            
+                <div class="mail-content">
+                    <h2 class="welcome">Dear, <%=name%></h2>
+
+                    <p>
+                        We hope this email finds you doing well. 
+                    </p>
+
+                    <p>
+                        Due to unavoidable circumstances, we will have to re-schedule the masterclass, <strong><%=name_of_masterclass%></strong>, that you are hosting on <strong><%=master_class_start_time%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong> to a date in the future. We sincerely apologise for any inconvenience that this rescheduling may cause. 
+                    </p>
+
+                    <p>
+                        We will inform you as soon as we get a confirmed new date. 
+                    </p>
+
+                    <p>
+                        Thank you once again for your commitment to helping our users grow and succeed.  
+                    </p>
+                    
+                    <p>
+                        With warm regards, <br>Team <strong>mind-n</strong>
+                    </p>
+                </div>
+            </main>
+            
+            <footer>
+                <ul class="social-links | text-center">
+                    <li class="linked-in">
+                        <a href="https://www.linkedin.com/company/witmerhealth">
+                            <img src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/LinkedIN-2.png" alt="LinkedIn">
+                        </a>
+                    </li>
+                    
+                    <li class="twitter">
+                        <a href="https://twitter.com/WitmerHealth">
+                            <img src="https://s3.ap-southeast-1.wasabisys.com/wt-user-documents-dev/TEMPLATE/EMAIL/Images/twitter-2.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            
+                <p class="greetings | text-center">
+                    <span>This email is sent to you by mind-n</span> 
+                    <span>Witmer Health Technologies<span> 
+                    <span>B-4, Green Court, Vidyaranyapura, Bangalore 560 097</span> 
+                    <span>Visit: witmer.ai</span>
+                </p> 
+                
+                <ul class="other-links | text-center">
+                    <li><a href="<%=manage_email_preferences%>">Manage email preferences</a></li>
+                    <li><a href="<%=privacy_policy_url%>">Privacy Policy</a></li>
+                    <li><a href="<%=faq_url%>">FAQs</a></li>
+                </ul>
+                
+                <p class="copyrights | text-center">
+                    mind-n is a registered trademark of Witmer Health Technologies <br>
+                    Copyright © 2023 Witmer Health Technologies. All rights reserved
+                </p>
+            </footer>
+        </div>
+    </body>
+
+</html>
