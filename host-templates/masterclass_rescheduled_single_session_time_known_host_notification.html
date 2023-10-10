@@ -14,6 +14,7 @@
             ================
             */
             :root {
+                --bg-light: #f3f2f0;
                 --clr-muted: #939393;
                 --clr-primary: #12284c;
                 --white: #fff;
@@ -34,7 +35,12 @@
             }
 
             body {
-                background-color: lightgray;
+                background-color: var(--bg-light);
+                padding: 1.5rem 1rem 1rem;
+            }
+
+            h2 {
+                font-weight: 400;
             }
 
             p {
@@ -69,7 +75,7 @@
             */
             .layout {
                 background-color: var(--white);
-                margin: 1rem auto;
+                margin: 0 auto;
                 max-width: 600px;
             }
 
@@ -85,12 +91,12 @@
             .notification-title {
                 background-color: var(--clr-primary);
                 color: var(--white);
-                padding: 1.5rem 1rem;
+                padding: 2.75rem 1rem;
             }
 
             /* Main */
             main {
-                margin: 0 1rem;
+                margin: 0 1.5rem;
             }
 
             .banner img{
@@ -183,7 +189,7 @@
                 </div>
                 
                 <div class="notification-title">
-                    <h2 class="subject | text-center"><%=subject%></h2>
+                    <h1 class="subject | text-center"><%=subject%></h1>
                 </div>
             </header>
             
@@ -194,31 +200,27 @@
             
                 <div class="mail-content">
                     <h2 class="welcome">Dear, <%=name%></h2>
-                    
+
                     <p>
                         We hope this email finds you doing well. 
                     </p>
 
                     <p>
-                        We are happy to inform you that the masterclass, <strong><%=name_of_masterclass%></strong>, originally scheduled on <strong><%=previous_start_date%></strong> between <strong><%=previous_scheduled_start - previous_scheduled_end%></strong>, is now scheduled on <strong><%=start_date%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong>. We do hope you will join us to host this interesting and engaging class. 
+                        Due to unavoidable circumstances, we will have to re-schedule the masterclass, <strong><%=name_of_masterclass%></strong>, on <strong><%=previous_start_date%></strong> between <strong><%=previous_scheduled_start - previous_scheduled_end%></strong> to <strong><%=start_date%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong>. Please note that the date and time for the class are indicated in Indian Standard Time or IST. We sincerely apologise for any inconvenience that this rescheduling may cause. 
                     </p>
 
                     <p>
-                        Click <a href="<%=masterclass_url%>">here</a> to add this masterclass to your calendar. 
+                        We will send you a reminder email on the day of the class.  
                     </p>
 
                     <p>
-                        We will send you a reminder email on the day of the class. As the host, you must sign in and start the class two minutes before the scheduled start. You may click <a href="<%=masterclass_url%>">here</a> to head to the sign-in page and start the class. 
-                    </p>
-
-                    <p>
-                        Thank you once again for your commitment to helping our users grow and succeed. We look forward to seeing you on <strong><%=start_date%></strong>. If, for any reason, there is a change in your availability or any updates regarding the class, please inform us by sending us an email <a href="<%=masterclass_url%>">here</a>. 
+                        Thank you once again for your commitment to helping our users grow and succeed. We look forward to seeing you on <strong><%=start_date%></strong>. If, for any reason, there is a change in your availability or any updates regarding the class, please inform us by sending us an email <a href="#">here</a>. 
                     </p>
 
                     <p>
                         We look forward to seeing you in the class. 
                     </p>
-
+                    
                     <p>
                         With warm regards, <br>Team <strong>mind-n</strong>
                     </p>

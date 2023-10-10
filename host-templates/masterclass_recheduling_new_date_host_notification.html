@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title><%= subject %></title>
-        <!-- <link rel="stylesheet" href="../style.css"> -->        
+        <!-- <link rel="stylesheet" href="../style.css"> -->
 
         <style>
             /* 
@@ -14,6 +14,7 @@
             ================
             */
             :root {
+                --bg-light: #f3f2f0;
                 --clr-muted: #939393;
                 --clr-primary: #12284c;
                 --white: #fff;
@@ -34,7 +35,12 @@
             }
 
             body {
-                background-color: lightgray;
+                background-color: var(--bg-light);
+                padding: 1.5rem 1rem 1rem;
+            }
+
+            h2 {
+                font-weight: 400;
             }
 
             p {
@@ -69,7 +75,7 @@
             */
             .layout {
                 background-color: var(--white);
-                margin: 1rem auto;
+                margin: 0 auto;
                 max-width: 600px;
             }
 
@@ -85,12 +91,12 @@
             .notification-title {
                 background-color: var(--clr-primary);
                 color: var(--white);
-                padding: 1.5rem 1rem;
+                padding: 2.75rem 1rem;
             }
 
             /* Main */
             main {
-                margin: 0 1rem;
+                margin: 0 1.5rem;
             }
 
             .banner img{
@@ -183,7 +189,7 @@
                 </div>
                 
                 <div class="notification-title">
-                    <h2 class="subject | text-center"><%=subject%></h2>
+                    <h1 class="subject | text-center"><%=subject%></h2>
                 </div>
             </header>
             
@@ -194,21 +200,21 @@
             
                 <div class="mail-content">
                     <h2 class="welcome">Dear, <%=name%></h2>
-
+                    
                     <p>
                         We hope this email finds you doing well. 
                     </p>
 
                     <p>
-                        In line with your request, we have re-scheduled the masterclass, <strong><%=name_of_masterclass%></strong>, scheduled initially on <strong><%=previous_start_date%></strong> between <strong><%=previous_scheduled_start - previous_scheduled_end%></strong> to <strong><%=start_date%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong>. Please note that the date and time for the class are indicated in Indian Standard Time or IST. 
+                        We are happy to inform you that the masterclass, <strong><%=name_of_masterclass%></strong>, originally scheduled on <strong><%=previous_start_date%></strong> between <strong><%=previous_scheduled_start - previous_scheduled_end%></strong>, is now scheduled on <strong><%=start_date%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong>. We do hope you will join us to host this interesting and engaging class. 
                     </p>
 
                     <p>
-                        We will send you a reminder email on the day of the class. The host for this class will sign in and start the class two minutes before the scheduled start. 
+                        Click <a href="<%=masterclass_url%>">here</a> to add this masterclass to your calendar. 
                     </p>
 
                     <p>
-                        Please do not hesitate to contact us if you have any specific requirements or need any assistance preparing for the class. We want to ensure that everything runs smoothly and that you have a positive experience delivering the class. 
+                        We will send you a reminder email on the day of the class. As the host, you must sign in and start the class two minutes before the scheduled start. You may click <a href="<%=masterclass_url%>">here</a> to head to the sign-in page and start the class. 
                     </p>
 
                     <p>
@@ -216,9 +222,9 @@
                     </p>
 
                     <p>
-                        We look forward to an interesting and engaging session. 
+                        We look forward to seeing you in the class. 
                     </p>
-                    
+
                     <p>
                         With warm regards, <br>Team <strong>mind-n</strong>
                     </p>

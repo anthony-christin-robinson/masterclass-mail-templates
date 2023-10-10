@@ -4,6 +4,7 @@ Global Variables
 ================
 */
 :root {
+    --bg-light: #f3f2f0;
     --clr-muted: #939393;
     --clr-primary: #12284c;
     --white: #fff;
@@ -24,7 +25,12 @@ Reset
 }
 
 body {
-    background-color: lightgray;
+    background-color: var(--bg-light);
+    padding: 1.5rem 1rem 1rem;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 p {
@@ -59,7 +65,7 @@ Custom Styles
 */
 .layout {
     background-color: var(--white);
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: 600px;
 }
 
@@ -75,12 +81,12 @@ Custom Styles
 .notification-title {
     background-color: var(--clr-primary);
     color: var(--white);
-    padding: 1.5rem 1rem;
+    padding: 2.75rem 1rem;
 }
 
 /* Main */
 main {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .banner img{
@@ -89,6 +95,7 @@ main {
 
 .mail-content {
     border-bottom: 1px solid lightgray;
+    margin: 0 1.5rem;
     padding: 1rem;
 }
 

@@ -14,6 +14,7 @@
             ================
             */
             :root {
+                --bg-light: #f3f2f0;
                 --clr-muted: #939393;
                 --clr-primary: #12284c;
                 --white: #fff;
@@ -34,7 +35,12 @@
             }
 
             body {
-                background-color: lightgray;
+                background-color: var(--bg-light);
+                padding: 1.5rem 1rem 1rem;
+            }
+
+            h2 {
+                font-weight: 400;
             }
 
             p {
@@ -69,7 +75,7 @@
             */
             .layout {
                 background-color: var(--white);
-                margin: 1rem auto;
+                margin: 0 auto;
                 max-width: 600px;
             }
 
@@ -85,12 +91,12 @@
             .notification-title {
                 background-color: var(--clr-primary);
                 color: var(--white);
-                padding: 1.5rem 1rem;
+                padding: 2.75rem 1rem;
             }
 
             /* Main */
             main {
-                margin: 0 1rem;
+                margin: 0 1.5rem;
             }
 
             .banner img{
@@ -183,7 +189,7 @@
                 </div>
                 
                 <div class="notification-title">
-                    <h2 class="subject | text-center"><%=subject%></h2>
+                    <h1 class="subject | text-center"><%=subject%></h1>
                 </div>
             </header>
             
@@ -200,19 +206,19 @@
                     </p>
 
                     <p>
-                        Due to unavoidable circumstances, we will have to re-schedule the masterclass, <strong><%=name_of_masterclass%></strong>, on <strong><%=previous_start_date%></strong> between <strong><%=previous_scheduled_start - previous_scheduled_end%></strong> to  <strong><%=start_date%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong>. Please note that the date and time for the class are indicated in Indian Standard Time or IST. We sincerely apologise for any inconvenience that this rescheduling may cause. 
+                        Due to unavoidable circumstances, we will have to re-schedule the masterclass, <strong><%=name_of_masterclass%></strong>, that you are hosting on <strong><%=master_class_start_time%></strong> between <strong><%=master_class_start_time - master_class_end_time%></strong> to a date in the future. We sincerely apologise for any inconvenience that this rescheduling may cause. 
                     </p>
 
                     <p>
-                        We will send you a reminder email on the day of the class.  
+                        We will inform you as soon as we get a confirmed new date. 
                     </p>
 
                     <p>
-                        Thank you once again for being with us on this journey of productivity and growth. We look forward to seeing you in this masterclass very soon. 
+                        Thank you once again for your commitment to helping our users grow and succeed.  
                     </p>
                     
                     <p>
-                        With you on your productivity and wellness journey, <br>Team <strong>mind-n</strong>
+                        With warm regards, <br>Team <strong>mind-n</strong>
                     </p>
                 </div>
             </main>
